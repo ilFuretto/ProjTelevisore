@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\ProjTelevisore\ProjTelevisore\ProjTelevisore\obj\Debug\ProjTelevisore.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\ProjTelevisore\ProjTelevisore\ProjTelevisore\obj\Debug\ProjTelevisore.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\ProjTelevisore\ProjTelevisore\ProjTelevisore\bin\Debug\ProjTelevisore.exe.config
+C:\Users\admin\Desktop\ProjTelevisore\ProjTelevisore\ProjTelevisore\bin\Debug\ProjTelevisore.exe
+C:\Users\admin\Desktop\ProjTelevisore\ProjTelevisore\ProjTelevisore\bin\Debug\ProjTelevisore.pdb
+C:\Users\admin\Desktop\ProjTelevisore\ProjTelevisore\ProjTelevisore\obj\Debug\ProjTelevisore.exe
+C:\Users\admin\Desktop\ProjTelevisore\ProjTelevisore\ProjTelevisore\obj\Debug\ProjTelevisore.pdb
