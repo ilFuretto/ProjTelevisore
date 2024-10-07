@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjTelevisore;
 
 namespace ProjTelevisore
 {
-    public class Televisore
+    class Televisore
     {
-        public string Marca;
-        public string Modello;
-        public int Consumo;
-        public int Dimensione;
-        public int Prezzo;
-        public bool Stato;
-        public int CanaleCorrente;
-        public int VolumeCorrente;
+        private string Marca;
+        private string Modello;
+        private int Consumo;
+        private int Dimensione;
+        private int Prezzo;
+        private bool Stato;
+        private int CanaleCorrente;
+        private int VolumeCorrente;
 
         public Televisore(string marca, string modello, int consumo, int dimensione, int prezzo)
         {
@@ -92,8 +93,21 @@ namespace ProjTelevisore
                 Console.WriteLine("Il televisore è spento.");
             }
         }
-    }
+        public int GetCanaleCorrente()
+        {
+            return CanaleCorrente;
+        }
 
+        public int GetVolumeCorrente()
+        {
+            return VolumeCorrente;
+        }
+
+        public bool GetAcceso()
+        {
+            return Stato;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -101,16 +115,18 @@ namespace ProjTelevisore
             Televisore s1 = new Televisore("Marca1", "Modello1", 100, 37, 300);
             Televisore s2 = new Televisore("Marca2", "Modello2", 120, 51, 500);
 
+            Console.WriteLine("Tv s1:");
             s1.Accendi();
             s1.CambiaCanale(5);
             s1.CambiaVolume(3);
 
+            Console.WriteLine("Tv s2:");
             s2.Accendi();
             s2.CambiaCanale(10);
             s2.CambiaVolume(10);
 
-            Console.WriteLine("Televisore s1: Canale " + s1.CanaleCorrente + ", Volume " + s1.VolumeCorrente);
-            Console.WriteLine("Televisore s2: Canale " + s2.CanaleCorrente + ", Volume " + s2.VolumeCorrente);
+            Console.WriteLine("Televisore s1: Canale " + s1.GetCanaleCorrente() + ", Volume " + s1.GetVolumeCorrente());
+            Console.WriteLine("Televisore s2: Canale " + s2.GetCanaleCorrente() + ", Volume " + s2.GetVolumeCorrente());
 
             Console.ReadLine();
         }
